@@ -85,7 +85,6 @@ CREATE TABLE urls (
 2. The service generates a unique short code using SHA1 and base62 encoding.
 3. The mapping is stored in MySQL and cached in Redis for fast access.
 4. Accessing `/:code` redirects to the original URL if it exists and is not expired.
-5. Unauthorized user can only generate up to 3 short-urls per day, authorized user can generate up to 50.
 
 ## TO-Do
 - User authentication (sign up, login, JWT/session support)
@@ -94,6 +93,7 @@ CREATE TABLE urls (
 - Custom short code support
 - Email verification and password reset
 - Improved test coverage and CI integration
+- Unauthorized user can only generate up to 5 short-urls per hour, authorized user can generate up to 50.
 
 ## Resources
 **url-shorten-algo**
