@@ -87,6 +87,14 @@ CREATE TABLE urls (
 4. Accessing `/:code` redirects to the original URL if it exists and is not expired.
 5. Unauthorized user can only generate up to 3 short-urls per day, authorized user can generate up to 50.
 
+## TO-Do
+- User authentication (sign up, login, JWT/session support)
+- User dashboard for managing their own short URLs
+- URL management (view, edit, delete, extend expiration)
+- Custom short code support
+- Email verification and password reset
+- Improved test coverage and CI integration
+
 ## Resources
 **url-shorten-algo**
 - https://microsoft.github.io/makecode-csp/unit-6/day-14/base63-url-shorteners
