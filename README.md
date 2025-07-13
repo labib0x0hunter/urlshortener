@@ -49,6 +49,10 @@ This project uses a middleware system to enhance security and control request fl
 2. **Redirect to Original URL**
    - Access `GET /:code` (e.g., `/abc123`)
    - If the code exists and is not expired, you will be redirected to the original URL.
+3. **Fetch metadata of short URL**
+  - Access `GET /fetch/:code` (e.g., `/fetch/abc123`)
+  - If the code exists , you will see the Metadata of the short URL.
+
 
 ## Environment Variables
 - `SERVER_HOST`: Host for the HTTP server (e.g., 0.0.0.0)
@@ -94,6 +98,8 @@ CREATE TABLE urls (
 - Email verification and password reset
 - Improved test coverage and CI integration
 - Unauthorized user can only generate up to 5 short-urls per hour, authorized user can generate up to 50.
+- Integrate RabbitMQ
+- Add and improve unit testing 
 
 ## Resources
 **url-shorten-algo**

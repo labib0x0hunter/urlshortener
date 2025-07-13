@@ -55,7 +55,8 @@ func main() {
 
 	// Set up Gin router and endpoints
 	router := gin.Default()
-	router.GET(":code", urlHandler.GetFullURL)                                                            // Redirect to original URL
+	router.GET("/:code", urlHandler.GetFullURL)                                                           // Redirect to original URL
+	router.GET("/fetch/:code", urlHandler.GetUrlMetadata)                                            // Fetch original URL without redirect
 	router.POST("/shorten", middleware.RateLimitByUserAgentMiddleware(redisCache), urlHandler.ShortenURL) // Create a new short URL
 
 	// Build server address from environment variables
