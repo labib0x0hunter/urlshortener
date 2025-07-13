@@ -50,8 +50,8 @@ This project uses a middleware system to enhance security and control request fl
    - Access `GET /:code` (e.g., `/abc123`)
    - If the code exists and is not expired, you will be redirected to the original URL.
 3. **Fetch metadata of short URL**
-  - Access `GET /fetch/:code` (e.g., `/fetch/abc123`)
-  - If the code exists , you will see the Metadata of the short URL.
+   - Access `GET /fetch/:code` (e.g., `/fetch/abc123`)
+   - If the code exists , you will see the Metadata of the short URL.
 
 
 ## Environment Variables
