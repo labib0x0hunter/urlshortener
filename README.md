@@ -97,7 +97,7 @@ CREATE TABLE urls (
 - Custom short code support
 - Email verification and password reset
 - Improved test coverage and CI integration
-- Unauthorized user can only generate up to 5 short-urls per hour, authorized user can generate up to 50.
+- Unauthorized user can only generate up to 5 short-urls per hour, authorized user can generate up to 20 per day.
 - Integrate RabbitMQ
 - Add and improve unit testing 
 
