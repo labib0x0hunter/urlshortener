@@ -42,15 +42,15 @@ This project uses a middleware system to enhance security and control request fl
      ```json
      {
        "message": "success",
-       "short_url": "http://localhost:8080/abc123",
+       "short_url": "http://localhost:8080/IrLvWOeO",
        "expire_at" : "2025-05-12 12:23:06"
      }
      ```
 2. **Redirect to Original URL**
-   - Access `GET /:code` (e.g., `/abc123`)
+   - Access `GET /:code` (e.g., `/IrLvWOeO`)
    - If the code exists and is not expired, you will be redirected to the original URL.
 3. **Fetch metadata of short URL**
-   - Access `GET /fetch/:code` (e.g., `/fetch/abc123`)
+   - Access `GET /fetch/:code` (e.g., `/fetch/IrLvWOeO`)
    - If the code exists , you will see the Metadata of the short URL.
 
 
